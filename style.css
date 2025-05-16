@@ -1,3 +1,4 @@
+/* Estilos generales para todos los elementos */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,6 +6,7 @@
     color: white;
 }
 
+/* Estilos para el cuerpo de la página */
 body {
     background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
     height: 100vh;
@@ -13,7 +15,7 @@ body {
     justify-content: center;
 }
 
-
+/* Pseudo-elemento ::before del body para la imagen de fondo */
 body::before {
     background-image: url("img/code.png");
     background-repeat: no-repeat;
@@ -26,6 +28,7 @@ body::before {
     opacity: 0.4;
 }
 
+/* Estilos para el contenedor principal */
 .container {
     width: 1200px;
     height: 600px;
@@ -40,7 +43,7 @@ body::before {
     position: relative;
 }
 
-
+/* Estilos para el contenedor del contenido */
 .container__contenido {
     display: flex;
     align-items: center;
@@ -48,11 +51,13 @@ body::before {
     bottom: 0;
 }
 
+/* Estilos para el contenedor de las informaciones */
 .container__informaciones {
     flex: 1;
     padding: 3rem;
 }
 
+/* Estilos para los botones */
 .container__boton {
     border-radius: 16px;
     background: #1875E8;
@@ -64,18 +69,22 @@ body::before {
     margin-top: 2rem;
 }
 
+/* Estilos para los botones cuando están deshabilitados */
 .container__boton:disabled {
     background: #898989;
 }
 
+/* Estilos para el contenedor del texto */
 .container__texto {
     margin: 16px 0 16px 0;
 }
 
+/* Estilos para el texto con color azul */
 .container__texto-azul {
     color: #1875E8;
 }
 
+/* Estilos para el campo de entrada */
 .container__input {
     width: 100%;
     height: 72px;
@@ -89,22 +98,26 @@ body::before {
     font-family: 'Inter', sans-serif;
 }
 
+/* Estilos para el contenedor de los botones */
 .container__botones {
     display: flex;
     gap: 2em;
 }
 
+/* Estilos para los encabezados h1 */
 h1 {
     font-family: 'Chakra Petch', sans-serif;
     font-size: 72px;
     padding-bottom: 3rem;
 }
 
+/* Estilos para los párrafos y botones */
 p,
 button {
     font-family: 'Inter', sans-serif;
 }
 
+/* Estilos específicos para los párrafos de texto */
 .texto__parrafo {
     font-size: 32px;
     font-weight: 400;
